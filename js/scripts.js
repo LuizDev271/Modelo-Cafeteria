@@ -17,10 +17,12 @@ function scrolar(){
 function bordaNavMobile(){
     let nav = document.getElementById('barra_de_nav')
     
-    if(x == 0){
+    scroll_Pagina = scrollY
+    
+    if(x == 0 && scroll_Pagina == 0){
         nav.style.borderBottom = '1px solid #a8a260'
         x++
-    } else{
+    } else if(x != 0 && scroll_Pagina != 0){
         nav.style.borderBottom = '1px solid black'
         x = 0
     }
