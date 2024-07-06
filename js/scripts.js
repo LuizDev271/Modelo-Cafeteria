@@ -1,8 +1,8 @@
 let scroll_Pagina = 0
+let x = 0
 
 function scrolar(){
     let nav = document.getElementById('barra_de_nav')
-    
     
     scroll_Pagina = scrollY
 
@@ -10,6 +10,19 @@ function scrolar(){
         nav.style.borderBottom = '1px solid #a8a260'
     } else {
         nav.style.borderBottom = '1px solid black'
+    }
+
+}
+
+function bordaNavMobile(){
+    let nav = document.getElementById('barra_de_nav')
+    
+    if(x == 0){
+        nav.style.borderBottom = '1px solid #a8a260'
+        x++
+    } else{
+        nav.style.borderBottom = '1px solid black'
+        x = 0
     }
 
 }
