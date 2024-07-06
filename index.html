@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="Otimizacoes/Normalize_Css.css">
+
+    <!-- Bootstrap -->
+      <link rel="stylesheet" href="Bootstrap4/css/bootstrap.css">
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+      <!--Font Awesone-->
+      <script src="https://kit.fontawesome.com/4fe87b1342.js" crossorigin="anonymous"></script>
+
+    <!-- Fim Bootstrap -->
+
+    <!-- HTML5SHIV -->
+    <!--[if lt IE 9]>
+	    <script src="_Otimizacoes/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+<body>
+
+    <header> <!--Nav-->
+        <nav class="navbar navbar-expand-md fixed-top">
+            <div class="container">
+
+                <a href="#">
+                    <img class="img-fluid navbar-brand" width="90" src="img/logo.png" alt="logo">
+                </a>
+
+                <ul id="navegacao" class="navbar-nav ml-5">
+                    <li class="nav-item ml-5 mr-3">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-item ml-3 mr-3">
+                        <a href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item ml-3 mr-3">
+                        <a href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item ml-3 mr-3">
+                        <a href="#clientes">Avaliações</a>
+                    </li>
+                    <li class="nav-item ml-3 mr-3">
+                        <a href="#mapa">Endereço</a>
+                    </li>
+                </ul>
+    
+                <ul class="navbar-nav">
+                    <li class="nav-item ml-3">
+                        <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a href="#"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a href="#"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <section id="topo"> <!--Topo-->
+        <div class="container">
+            <div class="row align-items-center">
+                <div>
+                    <h3>Experimente o melhor café da região</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates sapiente eligendi qui, cumque animi molestias minus eius fugiat officiis quo nam omnis ullam blanditiis nemo saepe similique laudantium corporis hic.</p>
+                    <button class="btn botao" type="button">Pegue o seu AGORA!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre"> <!--Sobre-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <h3 class="col-12"><span class="bege">Sobre</span> Nós</h3>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="img/about-img.jpg" width="570" alt="cafe_sobre">
+                </div>
+                <div class="col-md-4 caixa-conteudo">
+                    <div>
+                        <h3>O que faz o nosso café especial</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, architecto eius laborum libero assumenda quae voluptatem eaque alias fugit. Optio saepe eligendi repellat fugiat porro illum, repellendus eius ipsum tempore?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus quisquam est, id consequuntur mollitia laborum accusamus minus nobis commodi molestiae nulla obcaecati, corrupti aliquid distinctio vero atque? Nisi, ea?</p>
+                        <button class="btn botao" type="button">Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu"> <!--Menu-->
+        <div class="container">
+            <h3 class="col-12"><span class="bege">Nosso</span> Menu</h3>
+
+            <div class="row justify-content-center">
+                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3">
+                    <img class="img-fluid" src="img/menu-1.png" width="86" height="86" alt="tipos de café">
+                    <h5>Café Coado</h5>
+                    <p>R$ 5,99 <span class="promocao">R$ 9,99</span></p>
+                    <button class="btn botao" type="button">Adicone ao carrinho</button>
+                </div>
+
+                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3">
+                    <img class="img-fluid" src="img/menu-2.png" width="86" height="86" alt="tipos de café">
+                    <h5>Café Coado</h5>
+                    <p>R$ 5,99 <span class="promocao">R$ 9,99</span></p>
+                    <button class="btn botao" type="button">Adicone ao carrinho</button>
+                </div>
+
+                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3">
+                    <img class="img-fluid" src="img/menu-3.png" width="86" height="86" alt="tipos de café">
+                    <h5>Café Coado</h5>
+                    <p>R$ 5,99 <span class="promocao">R$ 9,99</span></p>
+                    <button class="btn botao" type="button">Adicone ao carrinho</button>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3">
+                    <img class="img-fluid" src="img/menu-4.png" width="86" height="86" alt="tipos de café">
+                    <h5>Café Coado</h5>
+                    <p>R$ 5,99 <span class="promocao">R$ 9,99</span></p>
+                    <button class="btn botao" type="button">Adicone ao carrinho</button>
+                </div>
+
+                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3">
+                    <img class="img-fluid" src="img/menu-5.png" width="86" height="86" alt="tipos de café">
+                    <h5>Café Coado</h5>
+                    <p>R$ 5,99 <span class="promocao">R$ 9,99</span></p>
+                    <button class="btn botao" type="button">Adicone ao carrinho</button>
+                </div>
+
+                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3">
+                    <img class="img-fluid" src="img/menu-6.png" width="86" height="86" alt="tipos de café">
+                    <h5>Café Coado</h5>
+                    <p>R$ 5,99 <span class="promocao">R$ 9,99</span></p>
+                    <button class="btn botao" type="button">Adicone ao carrinho</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="clientes"> <!--Avaliações-->
+        <div class="container">
+            <h3 class="col-12"><span class="bege">Nossos</span> Clientes</h3>
+            <div class="row justify-content-center">
+                
+                <div class="d-flex flex-column align-items-center col-md-3 m-3 p-1 clientes">
+                    <img class="img-fluid" src="img/quote-img.png" width="50" alt="tag">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus corporis quam facere, libero voluptatum perspiciatis eligendi magnam, quis accusamus temporibus ipsa est sunt inventore ex ratione? Dolorem voluptatem debitis repellendus.</p>
+                    <img class="img-fluid img-clientes" src="img/pic-1.png" width="100" alt="cliente">
+
+                    <h5>Rogério</h5>
+
+                    <div class="d-flex">
+                        <i class="fa-solid fa-star" style="color: white;"></i>
+                        <i class="fa-solid fa-star" style="color: white;"></i>
+                        <i class="fa-solid fa-star" style="color: white;"></i>
+                        <i class="fa-solid fa-star" style="color: white;"></i>
+                        <i class="fa-solid fa-star" style="color: white;"></i>
+                    </div>
+
+                </div>
+
+                <div class="d-flex flex-column align-items-center col-md-3 m-3 p-1 clientes">
+                    <img class="img-fluid" src="img/quote-img.png" width="50" alt="tag">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus corporis quam facere, libero voluptatum perspiciatis eligendi magnam, quis accusamus temporibus ipsa est sunt inventore ex ratione? Dolorem voluptatem debitis repellendus.</p>
+                    <img class="img-fluid img-clientes" src="img/pic-2.png" width="100" alt="cliente">
+
+                    <h5>Maria</h5>
+
+                    <div class="d-flex">
+                        <i class="fa-solid fa-star" style="color: white;"></i>
+                        <i class="fa-solid fa-star" style="color: white;"></i>
+                        <i class="fa-solid fa-star" style="color: white;"></i>
+                        <i class="fa-solid fa-star" style="color: white;"></i>
+                        <i class="fa-solid fa-star" style="color: white;"></i>
+                    </div>
+
+                </div>
+
+                <div class="d-flex flex-column align-items-center col-md-3 m-3 p-1 clientes">
+                    <img class="img-fluid" src="img/quote-img.png" width="50" alt="tag">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus corporis quam facere, libero voluptatum perspiciatis eligendi magnam, quis accusamus temporibus ipsa est sunt inventore ex ratione? Dolorem voluptatem debitis repellendus.</p>
+                    <img class="img-fluid img-clientes" src="img/pic-3.png" width="100" alt="cliente">
+
+                    <h5>Gabriel</h5>
+
+                    <div class="d-flex">
+                        <i class="fa-solid fa-star" style="color: white;"></i>
+                        <i class="fa-solid fa-star" style="color: white;"></i>
+                        <i class="fa-solid fa-star" style="color: white;"></i>
+                        <i class="fa-solid fa-star" style="color: white;"></i>
+                        <i class="fa-solid fa-star" style="color: white;"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mapa"> <!--Mapa-->
+        <div class="container">
+            <h3 class="col-12"><span class="bege">Nosso</span> Endereço</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d468706.26161847904!2d-47.57904052734374!3d-23.396620713269577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf172f25ef0adf%3A0x31b56bc5e935d334!2sPingado%20Caf%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1720227561598!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="links"> <!--Links-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <h5><span class="bege">Nosso</span> Endereço</h5>
+                    <p>Rua Alguma aeee, 999 <br> Algum Bairro - Aee <br> Estado - Estado</p>
+                    <p>Cep: 00.000-000</p>
+                </div>
+                <div class="col-md-4">
+                    <h5><span class="bege">Links</span></h5>
+
+                    <ul id="nav-links" class="navbar-nav align-items-center">
+                        <li class="nav-item mt-2"><a href="#topo">Home</a></li>
+                        <li class="nav-item mt-2"><a href="#sobre">Sobre</a></li>
+                        <li class="nav-item mt-2"><a href="#menu">Menu</a></li>
+                        <li class="nav-item mt-2"><a href="#clientes">Avaliações</a></li>
+                        <li class="nav-item mt-2"><a href="#mapa">Endereço</a></li>
+                    </ul>
+
+                </div>
+                <div class="d-flex flex-column align-items-center col-md-4">
+                    <h5><span class="bege">Nosso</span> Contato</h5>
+
+                    <p>Redes Sociais</p>
+
+                    <ul class="navbar-nav d-flex flex-row">
+                        <li class="nav-item ml-3">
+                            <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                        </li>
+                        <li class="nav-item ml-3">
+                            <a href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                        </li>
+                        <li class="nav-item ml-3">
+                            <a href="#"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                        </li>
+                        <li class="nav-item ml-3">
+                            <a href="#"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                        </li>
+                    </ul>
+                    
+                    <p class="mt-4">(21) 9.9999-9999 <br> email@gmail.com</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer> <!--Rodape-->
+        <p>Copyright &copy; Todos os direitos reservados | Feito pelo <br> <a href="https://www.instagram.com/devluizsilva" target="_blank">Desenvolvedor Luiz Silva</a></p>
+    </footer>
+
+</body>
+</html>
