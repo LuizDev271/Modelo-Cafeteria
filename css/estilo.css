@@ -10,6 +10,10 @@
     font-family: "Roboto", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #000;
 }
@@ -63,7 +67,6 @@ h3{
 ----------------*/
 nav{
     background-color: black;
-    border-bottom: 1px solid #a8a260;
 }
 
 #navegacao a, nav a{

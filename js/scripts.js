@@ -1,0 +1,15 @@
+let scroll_Pagina = 0
+
+function scrolar(){
+    let nav = document.getElementById('barra_de_nav')
+    
+    
+    scroll_Pagina = scrollY
+
+    if(scroll_Pagina != 0){
+        nav.style.borderBottom = '1px solid #a8a260'
+    } else {
+        nav.style.borderBottom = '1px solid black'
+    }
+
+}
