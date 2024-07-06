@@ -41,25 +41,31 @@
                     <img class="img-fluid navbar-brand" width="90" src="img/logo.png" alt="logo">
                 </a>
 
-                <ul id="navegacao" class="navbar-nav ml-5">
-                    <li class="nav-item ml-5 mr-3">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="nav-item ml-3 mr-3">
-                        <a href="#sobre">Sobre</a>
-                    </li>
-                    <li class="nav-item ml-3 mr-3">
-                        <a href="#menu">Menu</a>
-                    </li>
-                    <li class="nav-item ml-3 mr-3">
-                        <a href="#clientes">Avaliações</a>
-                    </li>
-                    <li class="nav-item ml-3 mr-3">
-                        <a href="#mapa">Endereço</a>
-                    </li>
-                </ul>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao" type="button">
+                    <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
+                </button>
+
+                <div id="navegacao" class="justify-content-center collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item mt-2 mt-md-0 ml-3 ml-md-5 mr-3">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="nav-item mt-2 mt-md-0 ml-3 mr-3">
+                            <a href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item mt-2 mt-md-0 ml-3 mr-3">
+                            <a href="#menu">Menu</a>
+                        </li>
+                        <li class="d-none d-md-block nav-item mt-2 mt-md-0 ml-3 mr-3">
+                            <a href="#clientes">Avaliações</a>
+                        </li>
+                        <li class="nav-item mt-2 mt-md-0 ml-3 mr-3">
+                            <a href="#mapa">Endereço</a>
+                        </li>
+                    </ul>
+                </div>
     
-                <ul class="navbar-nav">
+                <ul class="d-none d-lg-flex navbar-nav">
                     <li class="nav-item ml-3">
                         <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
                     </li>
@@ -114,21 +120,21 @@
             <h3 class="col-12"><span class="bege">Nosso</span> Menu</h3>
 
             <div class="row justify-content-center">
-                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3">
+                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3 col-10">
                     <img class="img-fluid" src="img/menu-1.png" width="86" height="86" alt="tipos de café">
                     <h5>Café Coado</h5>
                     <p>R$ 5,99 <span class="promocao">R$ 9,99</span></p>
                     <button class="btn botao" type="button">Adicone ao carrinho</button>
                 </div>
 
-                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3">
+                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3 col-10">
                     <img class="img-fluid" src="img/menu-2.png" width="86" height="86" alt="tipos de café">
                     <h5>Café Coado</h5>
                     <p>R$ 5,99 <span class="promocao">R$ 9,99</span></p>
                     <button class="btn botao" type="button">Adicone ao carrinho</button>
                 </div>
 
-                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3">
+                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3 col-10">
                     <img class="img-fluid" src="img/menu-3.png" width="86" height="86" alt="tipos de café">
                     <h5>Café Coado</h5>
                     <p>R$ 5,99 <span class="promocao">R$ 9,99</span></p>
@@ -139,21 +145,21 @@
 
             <div class="row justify-content-center">
 
-                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3">
+                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3 col-10">
                     <img class="img-fluid" src="img/menu-4.png" width="86" height="86" alt="tipos de café">
                     <h5>Café Coado</h5>
                     <p>R$ 5,99 <span class="promocao">R$ 9,99</span></p>
                     <button class="btn botao" type="button">Adicone ao carrinho</button>
                 </div>
 
-                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3">
+                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3 col-10">
                     <img class="img-fluid" src="img/menu-5.png" width="86" height="86" alt="tipos de café">
                     <h5>Café Coado</h5>
                     <p>R$ 5,99 <span class="promocao">R$ 9,99</span></p>
                     <button class="btn botao" type="button">Adicone ao carrinho</button>
                 </div>
 
-                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3">
+                <div class="d-flex flex-column align-items-center caixa-menu m-3 col-md-3 col-10">
                     <img class="img-fluid" src="img/menu-6.png" width="86" height="86" alt="tipos de café">
                     <h5>Café Coado</h5>
                     <p>R$ 5,99 <span class="promocao">R$ 9,99</span></p>
@@ -165,12 +171,12 @@
         </div>
     </section>
 
-    <section id="clientes"> <!--Avaliações-->
+    <section id="clientes" class="d-none d-md-block"> <!--Avaliações-->
         <div class="container">
             <h3 class="col-12"><span class="bege">Nossos</span> Clientes</h3>
             <div class="row justify-content-center">
                 
-                <div class="d-flex flex-column align-items-center col-md-3 m-3 p-1 clientes">
+                <div class="d-flex flex-column align-items-center col-md-3 col-9 m-3 p-1 clientes">
                     <img class="img-fluid" src="img/quote-img.png" width="50" alt="tag">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus corporis quam facere, libero voluptatum perspiciatis eligendi magnam, quis accusamus temporibus ipsa est sunt inventore ex ratione? Dolorem voluptatem debitis repellendus.</p>
                     <img class="img-fluid img-clientes" src="img/pic-1.png" width="100" alt="cliente">
@@ -187,7 +193,7 @@
 
                 </div>
 
-                <div class="d-flex flex-column align-items-center col-md-3 m-3 p-1 clientes">
+                <div class="d-flex flex-column align-items-center col-md-3 col-9 m-3 p-1 clientes">
                     <img class="img-fluid" src="img/quote-img.png" width="50" alt="tag">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus corporis quam facere, libero voluptatum perspiciatis eligendi magnam, quis accusamus temporibus ipsa est sunt inventore ex ratione? Dolorem voluptatem debitis repellendus.</p>
                     <img class="img-fluid img-clientes" src="img/pic-2.png" width="100" alt="cliente">
@@ -204,7 +210,7 @@
 
                 </div>
 
-                <div class="d-flex flex-column align-items-center col-md-3 m-3 p-1 clientes">
+                <div class="d-flex flex-column align-items-center col-md-3 col-9 m-3 p-1 clientes">
                     <img class="img-fluid" src="img/quote-img.png" width="50" alt="tag">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus corporis quam facere, libero voluptatum perspiciatis eligendi magnam, quis accusamus temporibus ipsa est sunt inventore ex ratione? Dolorem voluptatem debitis repellendus.</p>
                     <img class="img-fluid img-clientes" src="img/pic-3.png" width="100" alt="cliente">
@@ -228,7 +234,7 @@
         <div class="container">
             <h3 class="col-12"><span class="bege">Nosso</span> Endereço</h3>
             <div class="row justify-content-center">
-                <div class="col-md-9">
+                <div class="col-11 col-md-9">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d468706.26161847904!2d-47.57904052734374!3d-23.396620713269577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf172f25ef0adf%3A0x31b56bc5e935d334!2sPingado%20Caf%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1720227561598!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
@@ -250,7 +256,7 @@
                         <li class="nav-item mt-2"><a href="#topo">Home</a></li>
                         <li class="nav-item mt-2"><a href="#sobre">Sobre</a></li>
                         <li class="nav-item mt-2"><a href="#menu">Menu</a></li>
-                        <li class="nav-item mt-2"><a href="#clientes">Avaliações</a></li>
+                        <li class="d-none d-md-block nav-item mt-2"><a href="#clientes">Avaliações</a></li>
                         <li class="nav-item mt-2"><a href="#mapa">Endereço</a></li>
                     </ul>
 
