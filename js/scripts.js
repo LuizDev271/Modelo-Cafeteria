@@ -22,7 +22,7 @@ function bordaNavMobile(){
     if(x == 0 && scroll_Pagina == 0){
         nav.style.borderBottom = '1px solid #a8a260'
         x++
-    } else if(x != 0 && scroll_Pagina != 0){
+    } else if(x != 0 && scroll_Pagina == 0){
         nav.style.borderBottom = '1px solid black'
         x = 0
     }
