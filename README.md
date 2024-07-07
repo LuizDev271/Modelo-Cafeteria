@@ -3,7 +3,7 @@
  
 <br>
 
-Criado a base de <span style="color: orange">HTML5</span>, CSS3 e Bootstrap
+Criado a base de HTML5, CSS3 e Bootstrap
 
 ###
 
