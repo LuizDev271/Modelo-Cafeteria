@@ -28,11 +28,20 @@ function scrolar(){
         nav.style.borderBottom = '1px solid black'
     }
 
-    if(scroll_Pagina >= 3450){
-        nav.style.opacity = '0'
-    } else {
-        nav.style.opacity = '1'
+    if(largura >= 578){
+        if(scroll_Pagina >= 3450){
+            nav.style.opacity = '0'
+        } else {
+            nav.style.opacity = '1'
+        }
+    } else{
+        if(scroll_Pagina >= 4100){
+            nav.style.opacity = '0'
+        } else {
+            nav.style.opacity = '1'
+        }
     }
+    
 
 }
 
