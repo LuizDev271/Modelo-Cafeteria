@@ -1,5 +1,5 @@
 # Modelo-Cafeteria
- Modelo de Site para Cafeterias ###
+ Modelo de Site para Cafeteria -
 Criado a base de HTML5, CSS3 e Bootstrap
 
 
