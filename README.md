@@ -1,4 +1,4 @@
-# Modelo-Cafeteria
+# Modelo Cafeteria
 Modelo de Site para Cafeterias <br>
 Tecnologias Usadas: <br>
 
