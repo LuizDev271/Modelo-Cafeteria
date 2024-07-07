@@ -5,7 +5,6 @@
     margin: 0;
     border: 0;
     outline: 0;
-    transition: 0.2s linear;
     text-transform: capitalize;
     font-family: "Roboto", sans-serif;
 }
@@ -72,6 +71,7 @@ nav{
 #navegacao a, nav a{
     color: white;
     text-decoration: none;
+    transition: 0.2s linear;
 }
 
 #navegacao a:hover{
@@ -94,10 +94,18 @@ nav a:hover{
     padding-top: 50px;
     margin-bottom: 20px;
 
-    background-image: url(../img/home-img.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    transition: 1.2s linear;
+    opacity: 0;
+}
+
+#topo #caixa-topo{
+    transition: 1.3s linear;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 #topo .row{
@@ -124,6 +132,8 @@ nav a:hover{
 #sobre{
     padding-top: 120px;
     height: 900px;
+
+    transition: 0.5s linear;
 }
 
 #sobre h3{
@@ -160,6 +170,8 @@ nav a:hover{
 #menu{
     padding-top: 120px;
     height: 1000px;
+
+    transition: 0.5s linear;
 }
 
 #menu img{
@@ -193,6 +205,8 @@ nav a:hover{
 #clientes{
     height: 800px;
     padding-top: 120px;
+
+    transition: 0.5s linear;
 }
 #clientes img{
     padding-top: 20px;
@@ -229,7 +243,10 @@ nav a:hover{
 #mapa{
     height: 600px;
     padding-top: 120px;
+
+    transition: 0.5s linear;
 }
+
 #mapa h3{
     text-align: center;
     font-size: 2.5em;
@@ -302,3 +319,26 @@ footer a:hover{
     color: white;
 }
 
+/*Classes Animações JavaScript
+-------------------------------*/
+.invis{
+    opacity: 0;
+    filter: blur(15px);
+}
+
+.visi{
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.invis-topo{
+    opacity: 0;
+    width: 0px;
+    filter: opacity(0px);
+}
+
+.visi-topo{
+    opacity: 1;
+    width: 500px;
+    filter: opacity(200px);
+}

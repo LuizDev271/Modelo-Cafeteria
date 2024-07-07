@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="css/media.css">
 
 </head>
-<body onscroll="scrolar()">
+<body onload="animacaoTopo()" onscroll="scrolar(), sectionsAparecer()">
 
     <header> <!--Nav-->
         <nav id="barra_de_nav" class="navbar navbar-expand-md fixed-top">
@@ -87,16 +87,16 @@
     <section id="topo"> <!--Topo-->
         <div class="container">
             <div class="row align-items-center">
-                <div>
-                    <h3>Experimente o melhor café da região</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates sapiente eligendi qui, cumque animi molestias minus eius fugiat officiis quo nam omnis ullam blanditiis nemo saepe similique laudantium corporis hic.</p>
+                <div id="caixa-topo" class="invis-topo">
+                    <h3>Experimente o <br> melhor café da <br> região</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates <br> sapiente eligendi qui, cumque animi molestias minus eius fugiat officiis <br> quo nam omnis ullam blanditiis nemo saepe similique laudantium <br> corporis hic.</p>
                     <button class="btn botao" type="button">Pegue o seu AGORA!</button>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="sobre"> <!--Sobre-->
+    <section id="sobre" class="invis"> <!--Sobre-->
         <div class="container">
             <div class="row justify-content-center">
                 <h3 class="col-12"><span class="bege">Sobre</span> Nós</h3>
@@ -115,7 +115,7 @@
         </div>
     </section>
 
-    <section id="menu"> <!--Menu-->
+    <section id="menu" class="invis"> <!--Menu-->
         <div class="container">
             <h3 class="col-12"><span class="bege">Nosso</span> Menu</h3>
 
@@ -171,7 +171,7 @@
         </div>
     </section>
 
-    <section id="clientes" class="d-none d-md-block"> <!--Avaliações-->
+    <section id="clientes" class="d-none d-md-block invis"> <!--Avaliações-->
         <div class="container">
             <h3 class="col-12"><span class="bege">Nossos</span> Clientes</h3>
             <div class="row justify-content-center">
@@ -230,7 +230,7 @@
         </div>
     </section>
 
-    <section id="mapa"> <!--Mapa-->
+    <section id="mapa" class="invis"> <!--Mapa-->
         <div class="container">
             <h3 class="col-12"><span class="bege">Nosso</span> Endereço</h3>
             <div class="row justify-content-center">
