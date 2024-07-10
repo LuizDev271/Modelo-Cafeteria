@@ -26,6 +26,19 @@ h3{
 
 /*Classes
 ----------------*/
+.scroll-normal::-webkit-scrollbar{
+    width: 5px;
+    background-color: black;
+}
+
+.scroll-visi::-webkit-scrollbar-thumb{
+    background-color: #a8a260;
+}
+
+.scroll-invis::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+
 .bege{
     text-transform: uppercase;
     color: #a8a260;
@@ -36,8 +49,14 @@ h3{
 }
 
 .caixa-menu{
+    transition: all 0.3s linear;
     height: 275px;
     border: 1px solid #ffffff64;
+}
+
+.caixa-menu:hover{
+    transform: scale(1.12);
+    border-radius: 10px;
 }
 
 .clientes{
@@ -47,14 +66,31 @@ h3{
 }
 
 .botao{
+    position: relative;
+    z-index: 1;
+
     color: white;
     border-radius: 0px;
+    border: 2px solid #a8a260;
     padding: 10px 25px;
-    background-color: #a8a260;
+    background-color: transparent;
 }
 
-.botao:hover{
-    background-color: #bcb570;
+.botao::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    
+    background-color: #a8a260;
+    transition: width 0.4s ease-in-out;
+}
+
+.botao:hover::before{
+    width: 100%;
 }
 
 .promocao{
@@ -66,6 +102,10 @@ h3{
 ----------------*/
 nav{
     background-color: black;
+    transition: 0.3s linear;
+}
+
+nav a i{
     transition: 0.3s linear;
 }
 
@@ -85,6 +125,10 @@ nav{
 
 nav a:hover{
     color: #a8a260;
+}
+
+nav a i:hover{
+    transform: scale(1.25);
 }
 
 /*Topo

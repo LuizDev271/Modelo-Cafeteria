@@ -23,6 +23,14 @@ function scrolar(){
     scroll_Pagina = scrollY
 
     if(scroll_Pagina != 0){
+        document.body.classList.remove('scroll-invis')
+        document.body.classList.add('scroll-visi')
+    } else{
+        document.body.classList.remove('scroll-visi')
+        document.body.classList.add('scroll-invis')
+    }
+ 
+    if(scroll_Pagina != 0){
         nav.style.borderBottom = '1px solid #a8a260'
     } else {
         nav.style.borderBottom = '1px solid black'
