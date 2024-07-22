@@ -19,3 +19,7 @@ Projeto individual, Modelo de Site Responsivo de Cafeteria, criado a base de HTM
 
 <br>
 Link: https://luizdev271.github.io/Modelo-Cafeteria/
+<br>
+<br>
+Inspiração: https://www.behance.net/gallery/201976399/Site-Cafeteria/modules/1145638313
+
